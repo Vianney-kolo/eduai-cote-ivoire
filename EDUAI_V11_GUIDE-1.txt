@@ -1,0 +1,27 @@
+ÉDUAI — V11
+
+Fichiers :
+- index_v11.html : interface V11
+- server_v11.js : serveur Express + Responses API
+- .env.example_v11 : exemple de configuration
+
+Nouveautés V11 :
+1. Le serveur sert maintenant index_v11.html.
+2. /api/health indique si la clé API est configurée.
+3. /api/ai-test permet de tester réellement la connexion IA sans exposer la clé.
+4. Le profil local permet d'enregistrer prénom et niveau sur l'appareil.
+5. La progression regroupe cours, exercices et sujets d'examen déjà suivis.
+6. L'interface affiche une recommandation simple selon la progression.
+
+Installation :
+1. Place index_v11.html, server_v11.js et ton .env dans le même dossier.
+2. Dans .env, configure OPENAI_API_KEY et éventuellement OPENAI_MODEL.
+3. Installe les dépendances : npm install express dotenv openai
+4. Lance : node server_v11.js
+5. Ouvre http://localhost:3000
+
+Important :
+- Ne mets jamais la clé API dans index_v11.html.
+- Les sujets actuellement présents dans le prototype sont des sujets de démonstration, pas des annales officielles ivoiriennes.
+- La progression V11 est locale pour l'instant. Une vraie plateforme multi-utilisateur nécessitera ensuite une base de données et une authentification.
+- Pour les contenus et sujets officiels ivoiriens, il faudra vérifier les sources officielles avant publication.
